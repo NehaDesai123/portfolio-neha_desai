@@ -1,4 +1,4 @@
-.footer {
+.contact {
   background: var(--bg-primary);
   display: flex;
   align-items: center;
@@ -6,29 +6,24 @@
   position: relative;
 }
 
-.footerContainer {
+.contactContainer {
   max-width: 900px;
   margin: 0 auto;
 }
 
-.footerCard {
+.contactCard {
   background: var(--card-bg);
   border-radius: 20px;
-  padding: 35px;
+  padding: 20px;
   box-shadow: 0 20px 60px var(--shadow-color);
   border: 1px solid var(--border-color);
 }
 
-.footerWrapper {
+.contactWrapper {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
-  gap: 30px;
+  gap: 25px;
   align-items: start;
-}
-
-/* Left Content */
-.footerLeft {
-  padding-top: 20px;
 }
 
 .introBadge {
@@ -40,15 +35,15 @@
   color: #808000;
   font-size: 0.85rem;
   margin-bottom: 25px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
-.footerTitle {
-  font-size: 2.2rem;
+.contactTitle {
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--text-primary);
-  line-height: 1.2;
-  margin-bottom: 25px;
+  line-height: 2.59rem;
+  margin-bottom: 20px;
 }
 
 .contactInfo {
@@ -90,11 +85,6 @@
 
 .contactEmail:hover {
   color: #808000;
-}
-
-/* Right Content - Contact Form */
-.footerRight {
-  padding-top: 20px;
 }
 
 .contactForm {
@@ -186,30 +176,30 @@
 }
 
 @media (max-width: 1200px) {
-  .footerCard {
+  .contactCard {
     padding: 40px;
   }
 
-  .footerWrapper {
+  .contactWrapper {
     gap: 50px;
   }
 
-  .footerTitle {
+  .contactTitle {
     font-size: 2.2rem;
   }
 }
 
 @media (max-width: 968px) {
-  .footerCard {
+  .contactCard {
     padding: 35px;
   }
 
-  .footerWrapper {
+  .contactWrapper {
     grid-template-columns: 1fr;
     gap: 35px;
   }
 
-  .footerTitle {
+  .contactTitle {
     font-size: 1.8rem;
   }
 
@@ -219,23 +209,23 @@
 }
 
 @media (max-width: 640px) {
-  .footer {
-    padding: 60px 0;
+  .contact {
+    padding: 20px 0;
   }
 
-  .footerCard {
+  .contactCard {
     padding: 25px 20px;
     border-radius: 20px;
   }
 
-  .footerTitle {
+  .contactTitle {
     font-size: 2rem;
   }
 
   .contactInfo {
-    flex-direction: column;
+    /* flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: center; */
   }
 
   .btnSubmit {

@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   background: var(--bg-primary);
-  padding: 40px 0;
+  padding: 0;
   position: relative;
 }
 
@@ -15,7 +15,7 @@
 .aboutContent {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
-  gap: 80px;
+  gap: 20px;
   align-items: start;
 }
 
@@ -32,16 +32,16 @@
   border-radius: 20px;
   color: var(--accent-color);
   font-size: 0.9rem;
-  margin-bottom: 30px;
-  font-weight: 500;
+  margin-bottom: 25px;
+  font-weight: 700;
 }
 
 .aboutTitle {
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--text-primary);
-  line-height: 1.3;
-  margin-bottom: 40px;
+  line-height: 2.59rem;
+  margin-bottom: 20px;
 }
 
 .btnDownload {
@@ -133,11 +133,16 @@
 
 @media (max-width: 640px) {
   .about {
-    padding: 60px 0;
+    padding: 0;
+  }
+
+  .aboutContent {
+    gap: 20px;
   }
 
   .aboutTitle {
     font-size: 1.8rem;
+    margin-bottom: 0;
   }
 
   .aboutImage {

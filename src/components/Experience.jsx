@@ -12,11 +12,11 @@ function Experience() {
             <div className={styles.experienceLeft}>
               <div className={styles.introBadge}>Experience</div>
 
-              <h3 className={styles.experienceTitle}>
-                I Worked With<br />
-                Wel-Known<br />
+              <h2 className={styles.experienceTitle}>
+                I Worked With
+                Wel-Known
                 Companies
-              </h3>
+              </h2>
             </div>
 
             <div className={styles.experienceRight}>

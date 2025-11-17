@@ -28,10 +28,12 @@ const Achievements = () => {
           <div className={styles.achievementsGrid}>
             {achievements.map((achievement, index) => (
               <div key={index} className={`${styles.achievementCard} fade-in`}>
-                <div className={styles.achievementIcon}>
-                  <i className={achievement.icon}></i>
+                <div className={styles.achievementHeader}>
+                  <div className={styles.achievementIcon}>
+                    <i className={achievement.icon}></i>
+                  </div>
+                  <h2 className={styles.achievementTitle}>{achievement.title}</h2>
                 </div>
-                <h3 className={styles.achievementTitle}>{achievement.title}</h3>
                 <p className={styles.achievementDescription}>{achievement.description}</p>
               </div>
             ))}

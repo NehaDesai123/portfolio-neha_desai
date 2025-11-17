@@ -97,23 +97,25 @@ const Projects = () => {
             <div className={styles.introBadge}>Projects</div>
           </div>
 
-          <h3 className={styles.projectsTitle}>Hands-on Experience and Creative Solutions</h3>
+          <h2 className={styles.projectsTitle}>Hands-on Experience and Creative Solutions</h2>
 
           <div className={styles.projectsGrid}>
             {projects.map((project, index) => (
               <div key={index} className={`${styles.projectCard} fade-in`}>
-                <div className={styles.projectIcon}>
-                  {project.image ? (
-                      <img
-                        src={project.image}
-                        alt={project.title + ' logo'}
-                        className={styles.projectImage}
-                      />
-                  ) : (
-                      <i className={`fas ${project.icon} ${styles.icon}`}></i>
-                  )}
+                <div className={styles.projectHeader}>
+                  <div className={styles.projectIcon}>
+                    {project.image ? (
+                        <img
+                          src={project.image}
+                          alt={project.title + ' logo'}
+                          className={styles.projectImage}
+                        />
+                    ) : (
+                        <i className={`fas ${project.icon} ${styles.icon}`}></i>
+                    )}
+                  </div>
+                  <h3 className={styles.projectTitle}>{project.title}</h3>
                 </div>
-                <h3 className={styles.projectTitle}>{project.title}</h3>
                 <p className={styles.projectCompany}>{project.company}</p>
                 <p className={styles.projectDuration}>{project.duration}</p>
                 <div className={styles.projectTechnologies}>

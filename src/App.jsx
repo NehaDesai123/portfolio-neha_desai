@@ -8,7 +8,7 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Education from './components/Education';
 import Achievements from './components/Achievements';
-import Footer from './components/Footer';
+import Contact from './components/Contact';
 import styles from './App.module.css';
 import profileImage from './assets/neha.jpg';
 import initialImage from './assets/initial.png';
@@ -63,7 +63,7 @@ function App() {
           <Projects />
           <Education />
           <Achievements />
-          <Footer />
+          <Contact />
         </main>
       </div>
     </div>

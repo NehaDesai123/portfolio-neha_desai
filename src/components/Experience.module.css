@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   background: var(--bg-primary);
-  padding: 40px 0;
+  padding: 40px 0 0;
   position: relative;
 }
 
@@ -13,13 +13,8 @@
 .experienceWrapper {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
-  gap: 80px;
+  gap: 20px;
   align-items: start;
-}
-
-/* Left Content */
-.experienceLeft {
-  padding-top: 20px;
 }
 
 .introBadge {
@@ -30,31 +25,28 @@
   border-radius: 20px;
   color: var(--accent-color);
   font-size: 0.9rem;
-  margin-bottom: 30px;
-  font-weight: 500;
+  margin-bottom: 25px;
+  font-weight: 700;
 }
 
 .experienceTitle {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--text-primary);
-  line-height: 1.2;
-}
+  line-height: 2.59rem;
+  margin-bottom: 20px;
 
-/* Right Content - Companies Grid */
-.experienceRight {
-  padding-top: 20px;
 }
 
 .companiesGrid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 30px;
+  gap: 20px;
 }
 
 .companyCard {
   background: var(--card-bg);
-  padding: 35px;
+  padding: 20px;
   border-radius: 20px;
   border: 1px solid var(--border-color);
   transition: all 0.3s ease;
@@ -68,8 +60,8 @@
 
 .companyContent {
   display: flex;
-  flex-direction: column;
-  gap: 25px;
+  flex-direction: row;
+  gap: 12px;
 }
 
 .companyLogo {
@@ -78,7 +70,6 @@
   width: auto;
   height: auto;
   object-fit: contain;
-  filter: grayscale(100%) brightness(0.8);
   transition: all 0.3s ease;
 }
 
@@ -96,12 +87,15 @@
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--text-primary);
+  line-height: 1.5rem;
 }
 
 .companyRole {
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--accent-color);
+  line-height: 0.6rem;
+
 }
 
 .companyDuration {
@@ -109,7 +103,7 @@
   color: var(--text-muted);
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 3px;
 }
 
 .companyDuration::before {
@@ -120,8 +114,8 @@
 .companyDescription {
   color: var(--text-secondary);
   font-size: 0.95rem;
-  line-height: 1.7;
-  margin-top: 5px;
+  line-height: 1.5rem;
+  margin-top: 0;
 }
 
 @media (max-width: 1200px) {
@@ -155,11 +149,12 @@
 
 @media (max-width: 640px) {
   .experience {
-    padding: 60px 0;
+    padding: 0;
   }
 
   .experienceTitle {
     font-size: 2rem;
+    margin-bottom: 0;
   }
 
   .companiesGrid {
@@ -181,5 +176,6 @@
 
   .companyRole {
     font-size: 1rem;
+    line-height: 1;
   }
 }

@@ -65,6 +65,11 @@ function Navigation({ toggleTheme, currentTheme }) {
                 <li><a href="#achievements" onClick={() => selectSection('achievements')} className={selectedSection === 'achievements' ? styles.active : ''}>Achievements</a></li>
               </ul>
             </li>
+            <li className={styles.mobileContactItem}>
+              <a href="#contact" onClick={() => selectSection('contact')} className={styles.mobileContact}>
+                LET'S TALK <i className="fas fa-arrow-right"></i>
+              </a>
+            </li>
           </ul>
           <div className={styles.navActions}>
             <button onClick={toggleTheme} className={styles.themeToggle}>

@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 0;
+  padding: 10px 0;
   background: rgba(var(--bg-primary-rgb, 10, 10, 10), 0.8);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
@@ -64,7 +64,7 @@
 .navLinks {
   display: flex;
   list-style: none;
-  gap: 30px;
+  gap: 15px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -183,8 +183,8 @@
   background: transparent;
   border: 2px solid var(--text-primary, #fff);
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -199,22 +199,24 @@
   transform: scale(1.1);
 }
 
+.mobileContact,
 .navBtn {
   position: relative;
-  padding: 10px 25px;
-  background: var(--accent-color);
-  color: var(--bg-primary);
+  padding: 8px 15px !important;
+  background: var(--accent-color) !important;
+  color: var(--bg-primary) !important;
   text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
-  font-size: 0.85rem;
+  font-size: 0.85rem !important;
   display: flex;
   align-items: center;
   gap: 8px;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease !important;
   overflow: hidden;
 }
 
+.mobileContact::before,
 .navBtn::before {
   content: '';
   position: absolute;
@@ -222,20 +224,23 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-  transition: left 0.5s;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent) !important;
+  transition: left 0.5s !important;
 }
 
+.mobileContact:hover::before,
 .navBtn:hover::before {
   left: 100%;
 }
 
+.mobileContact:hover,
 .navBtn:hover {
-  background: var(--accent-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(128, 128, 0, 0.3);
+  background: var(--accent-hover) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 5px 15px rgba(128, 128, 0, 0.3) !important;
 }
 
+.mobileContact i,
 .navBtn i {
   font-size: 0.8rem;
 }
@@ -248,15 +253,15 @@
 }
 
 .hamburger span {
-  width: 25px;
+  width: 20px;
   height: 3px;
-  background: #fff;
+  background: var(--text-primary);
   transition: all 0.3s ease;
   border-radius: 3px;
 }
 
 .hamburger.active span:nth-child(1) {
-  transform: rotate(45deg) translate(8px, 8px);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
 .hamburger.active span:nth-child(2) {
@@ -267,28 +272,47 @@
   transform: rotate(-45deg) translate(7px, -7px);
 }
 
+/* Hide mobile contact item on desktop */
+.mobileContactItem {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
+    margin-right: 10px;
   }
 
   .navActions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 40%;
+  }
+
+  .navBtn {
     display: none;
+  }
+
+  .themeToggle {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
   }
 
   .navLinks {
     position: fixed;
-    top: 70px;
+    top: 4.3rem;
     right: -100%;
     flex-direction: column;
-    background: rgba(10, 10, 10, 0.98);
+    background: rgba(var(--bg-primary-rgb), 0.98);
     backdrop-filter: blur(10px);
     width: 250px;
-    padding: 30px;
-    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    box-shadow: -5px 0 20px var(--shadow-color);
     transition: right 0.3s ease;
     height: calc(100vh - 70px);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid var(--border-color);
   }
 
   .navLinks.active {
@@ -307,7 +331,7 @@
     transform: none;
     margin-top: 10px;
     margin-left: 15px;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(var(--bg-secondary-rgb), 0.3);
     box-shadow: none;
     border: none;
     display: none;
@@ -321,4 +345,54 @@
     width: 100%;
     justify-content: space-between;
   }
+
+  /* Show mobile contact item on mobile */
+  .mobileContactItem {
+    display: block;
+    margin-top: 20px;
+  }
+
+  /* Mobile contact button styling */
+  /* .mobileContact {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background: var(--accent-color);
+    color: var(--bg-primary);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  } */
+
+  /* .mobileContact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.5s;
+  } */
+
+  /* .mobileContact:hover::before {
+    left: 100%; */
+  /* } */
+
+  /* .mobileContact:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(128, 128, 0, 0.3);
+  } */
+
+  /* .mobileContact i {
+    font-size: 0.8rem;
+  } */
 }

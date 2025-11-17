@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import styles from './Footer.module.css';
+import styles from './Contact.module.css';
 import SuccessDialog from './SuccessDialog';
 
-const Footer = () => {
+const Contact = () => {
   const [form, setForm] = useState({
     fullName: '',
     email: '',
@@ -69,18 +69,18 @@ const Footer = () => {
     setForm({ ...form, [name]: value });
   };
 
-  const footerJSX = (
-    <footer id="contact" className={styles.footer}>
+  const contactJSX = (
+    <section id="contact" className={styles.contact}>
       <div className="container">
-        <div className={styles.footerContainer}>
-          <div className={styles.footerCard}>
-            <div className={styles.footerWrapper}>
-              <div className={styles.footerLeft}>
+        <div className={styles.contactContainer}>
+          <div className={styles.contactCard}>
+            <div className={styles.contactWrapper}>
+              <div className={styles.contactLeft}>
                 <div className={styles.introBadge}>Want to Hire Me?</div>
 
-                <h4 className={styles.footerTitle}>
-                  Let's Work<br />
-                  Together On<br />
+                <h4 className={styles.contactTitle}>
+                  Let's Work
+                  Together On
                   Project<span style={{ fontSize: '1.75rem' }}>🤝</span>
                 </h4>
 
@@ -97,7 +97,7 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className={styles.footerRight}>
+              <div className={styles.contactRight}>
                 <form className={styles.contactForm} onSubmit={handleSubmit}>
                   <div className={styles.formRow}>
                     <input
@@ -179,10 +179,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </section>
   );
 
-  return showSuccess ? <SuccessDialog onClose={() => setShowSuccess(false)} /> : footerJSX;
+  return showSuccess ? <SuccessDialog onClose={() => setShowSuccess(false)} /> : contactJSX;
 };
 
-export default Footer;
+export default Contact;

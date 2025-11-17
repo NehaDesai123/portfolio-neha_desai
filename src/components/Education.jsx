@@ -28,7 +28,7 @@ const Education = () => {
               <div className={styles.introBadge}>Education</div>
 
               <h2 className={styles.educationTitle}>
-                Academic<br />
+                Academic
                 Background
               </h2>
             </div>
@@ -42,7 +42,7 @@ const Education = () => {
                         <i className={edu.icon}></i>
                       </div>
                       <div className={styles.educationInfo}>
-                        <h3 className={styles.institutionName}>{edu.institution}</h3>
+                        <h2 className={styles.institutionName}>{edu.institution}</h2>
                         <p className={styles.degreeTitle}>{edu.degree}</p>
                         <p className={styles.educationDuration}>{edu.duration}</p>
                         <p className={styles.educationLocation}>
