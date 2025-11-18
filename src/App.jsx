@@ -10,7 +10,7 @@ import Education from './components/Education';
 import Achievements from './components/Achievements';
 import Contact from './components/Contact';
 import styles from './App.module.css';
-import profileImage from './assets/neha.jpg';
+import nehaImage from './assets/neha.jpg';
 import initialImage from './assets/initial.png';
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
           <div className={styles.profileCard}>
             <div className={styles.profileImageWrapper}>
               <div className={styles.profileImage}>
-                <img src={profileImage} alt="Neha Desai" />
+                <img src={nehaImage} alt="Neha Desai" />
               </div>
             </div>
 

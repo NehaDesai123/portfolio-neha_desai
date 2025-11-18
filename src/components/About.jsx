@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutImage from '../assets/about_nd.png';
+import aboutNdImage from '../assets/about_nd.png';
 import styles from './About.module.css';
 
 function About() {
@@ -27,7 +27,7 @@ function About() {
             {/* Right Content */}
             <div className={`${styles.aboutRight} fade-in`}>
               <div className={styles.aboutImage}>
-                <img src={aboutImage} alt="Neha Desai" className={styles.aboutImg} />
+                <img src={aboutNdImage} alt="Neha Desai" className={styles.aboutImg} />
               </div>
 
               <div className={styles.aboutText}>

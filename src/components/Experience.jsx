@@ -1,6 +1,6 @@
 import React from 'react';
-import cognizantLogo from '../assets/cognizant.png';
-import capgeminiLogo from '../assets/capgemini.png';
+import cognizantImage from '../assets/cognizant.png';
+import capgeminiImage from '../assets/capgemini.png';
 import styles from './Experience.module.css';
 
 function Experience() {
@@ -24,7 +24,7 @@ function Experience() {
                 {/* Cognizant */}
                 <div className={`${styles.companyCard} fade-in`}>
                   <div className={styles.companyContent}>
-                    <img src={cognizantLogo} alt="Cognizant" className={styles.companyLogo} />
+                    <img src={cognizantImage} alt="Cognizant" className={styles.companyLogo} />
                     <div className={styles.companyInfo}>
                       <h3 className={styles.companyName}>Cognizant</h3>
                       <p className={styles.companyRole}>Sr Software Associate</p>
@@ -39,7 +39,7 @@ function Experience() {
                 {/* Capgemini */}
                 <div className={`${styles.companyCard} fade-in`}>
                   <div className={styles.companyContent}>
-                    <img src={capgeminiLogo} alt="Capgemini" className={styles.companyLogo} />
+                    <img src={capgeminiImage} alt="Capgemini" className={styles.companyLogo} />
                     <div className={styles.companyInfo}>
                       <h3 className={styles.companyName}>Capgemini</h3>
                       <p className={styles.companyRole}>Sr Analyst/Software Engineer</p>

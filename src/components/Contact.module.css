@@ -100,13 +100,15 @@
 }
 
 .formRow.twoCols {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
 }
 
 .formInput,
 .formTextarea {
   width: 100%;
+  max-width: 100% !important;
   background: transparent;
   border: none;
   border-bottom: 1px solid var(--border-color);
@@ -115,10 +117,12 @@
   font-size: 1rem;
   font-family: 'Poppins', sans-serif;
   transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 .formInput.fullWidth {
   width: 100%;
+  max-width: 100% !important;
 }
 
 .formInput::placeholder,
@@ -136,6 +140,7 @@
 .formTextarea {
   resize: vertical;
   min-height: 80px;
+  max-width: 100%;
 }
 
 .fileUpload {
@@ -205,30 +210,103 @@
 
   .formRow.twoCols {
     grid-template-columns: 1fr;
+    gap: 15px;
   }
 }
 
 @media (max-width: 640px) {
   .contact {
-    padding: 20px 0;
+    padding: 0;
+  }
+
+  .contactContainer {
+    padding: 0;
   }
 
   .contactCard {
-    padding: 25px 20px;
-    border-radius: 20px;
+    padding: 20px 15px;
+    border-radius: 15px;
+    margin: 0;
   }
 
   .contactTitle {
-    font-size: 2rem;
+    font-size: 1.75rem;
+    line-height: 1.3;
   }
 
-  .contactInfo {
-    /* flex-direction: column;
-    align-items: center;
-    text-align: center; */
+  .formRow {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .formRow.twoCols {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .formInput,
+  .formTextarea {
+    font-size: 0.95rem;
+    padding: 10px 0;
   }
 
   .btnSubmit {
     width: 100%;
+    padding: 18px 20px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactCard {
+    padding: 15px 10px;
+    margin: 0;
+  }
+
+  .contactTitle {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .introBadge {
+    font-size: 0.8rem;
+    padding: 6px 15px;
+    margin-bottom: 20px;
+  }
+
+  .contactInfo {
+    gap: 10px;
+  }
+
+  .contactIcon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .contactIcon i {
+    font-size: 1.3rem;
+  }
+
+  .contactEmail {
+    font-size: 1rem;
+  }
+
+  .formRow {
+    margin-bottom: 15px;
+  }
+
+  .formInput,
+  .formTextarea {
+    font-size: 0.9rem;
+    padding: 8px 0;
+  }
+
+  .formTextarea {
+    min-height: 100px;
+  }
+
+  .btnSubmit {
+    padding: 16px 20px;
+    font-size: 1rem;
   }
 }
