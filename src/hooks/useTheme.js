@@ -4,7 +4,7 @@ export function useTheme() {
   const [manualTheme, setManualTheme] = useState(null); // 'light' or 'dark' or null for system
   const [mediaQuery, setMediaQuery] = useState(null);
 
-  const currentTheme = manualTheme || (mediaQuery?.matches ? 'dark' : 'light');
+  const currentTheme = manualTheme || (mediaQuery?.matches ? 'dark' : 'dark');
 
   useEffect(() => {
     const mq = window.matchMedia('(prefers-color-scheme: dark)');
@@ -34,7 +34,8 @@ export function useTheme() {
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     setManualTheme(newTheme);
     localStorage.setItem('theme', newTheme);
-    applyTheme();
+    // Apply theme immediately with the new theme value
+    document.documentElement.setAttribute('data-theme', newTheme);
   };
 
   const applyTheme = () => {

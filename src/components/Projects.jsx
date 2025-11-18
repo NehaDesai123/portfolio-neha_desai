@@ -127,7 +127,7 @@ const Projects = () => {
                 <div className={styles.projectHighlights}>
                   {project.highlights.map((highlight, idx) => (
                     <div key={idx} className={styles.highlight}>
-                      {highlight}
+                      - {highlight}
                     </div>
                   ))}
                 </div>

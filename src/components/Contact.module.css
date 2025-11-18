@@ -110,7 +110,7 @@
   background: transparent;
   border: none;
   border-bottom: 1px solid var(--border-color);
-  padding: 15px 0;
+  padding: 7px 0;
   color: var(--text-primary);
   font-size: 1rem;
   font-family: 'Poppins', sans-serif;
@@ -135,7 +135,7 @@
 
 .formTextarea {
   resize: vertical;
-  min-height: 120px;
+  min-height: 80px;
 }
 
 .fileUpload {
@@ -181,7 +181,7 @@
   }
 
   .contactWrapper {
-    gap: 50px;
+    gap: 25px;
   }
 
   .contactTitle {
@@ -196,7 +196,7 @@
 
   .contactWrapper {
     grid-template-columns: 1fr;
-    gap: 35px;
+    gap: 25px;
   }
 
   .contactTitle {

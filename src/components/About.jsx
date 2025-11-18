@@ -15,6 +15,13 @@ function About() {
               <h2 className={styles.aboutTitle}>
                 A Lifelong Learner in UI/UX Design and Product Development
               </h2>
+
+              <div className={styles.portfolioLink}>
+                <a href="https://nehadesai123.github.io/Netfilx-Portfolio/netflix" target="_blank" rel="noopener noreferrer" className={styles.netflixPortfolio}>
+                  <i className="fas fa-external-link-alt"></i>
+                  Netflix Portfolio
+                </a>
+              </div>
             </div>
 
             {/* Right Content */}

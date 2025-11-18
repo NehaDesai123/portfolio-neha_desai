@@ -71,6 +71,7 @@ function Navigation({ toggleTheme, currentTheme }) {
               </a>
             </li>
           </ul>
+          <div className={styles.navActionsMain}>
           <div className={styles.navActions}>
             <button onClick={toggleTheme} className={styles.themeToggle}>
               <i className={`fas ${currentTheme === 'dark' ? 'fa-sun' : 'fa-moon'}`}></i>
@@ -86,6 +87,8 @@ function Navigation({ toggleTheme, currentTheme }) {
             <span></span>
             <span></span>
             <span></span>
+          </div>
+          
           </div>
         </div>
       </div>

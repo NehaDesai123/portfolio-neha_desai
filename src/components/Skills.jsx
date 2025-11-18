@@ -20,7 +20,7 @@ function Skills() {
                 User-Centered Design (UCD), Wireframing, Prototyping, Visual Design, Design Systems, Interaction Design, Responsive Design
               </p>
               <p className={styles.serviceTools}>
-                <strong>Tools:</strong> Figma, Sketch, Adobe XD, Framer, Balsamiq
+                <strong>Tools:</strong> Figma, Miro, Invision
               </p>
             </div>
 
@@ -31,7 +31,7 @@ function Skills() {
                 JavaScript, HTML/HTML5, CSS, Vue.js (2 & 3), Vuex, Vue Router, Bootstrap, Component Architecture
               </p>
               <p className={styles.serviceTools}>
-                <strong>Technologies:</strong> Vue.js, JavaScript, HTML5, CSS3, Bootstrap
+                <strong>Technologies:</strong> Vue.js, JavaScript, HTML5, CSS3, Bootstrap, React
               </p>
             </div>
 
