@@ -39,7 +39,7 @@ function Hero() {
                 <i className="fas fa-envelope"></i>
                 HIRE ME NOW
               </a>
-              <a href="/assets/neha_desai.pdf" download className={styles.btnDownload}>
+              <a href={`${import.meta.env.BASE_URL}assets/neha_desai.pdf`} download className={styles.btnDownload}>
                 <i className="fas fa-download"></i>
                 Download CV
               </a>
