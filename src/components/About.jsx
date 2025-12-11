@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutNdImage from '../assets/about_nd.png';
+import aboutNdImage from '../assets/about_nd.jpg';
 import styles from './About.module.css';
 
 function About() {
@@ -17,7 +17,7 @@ function About() {
               </h2>
 
               <div className={styles.portfolioLink}>
-                <a href="https://nehadesai123.github.io/Netfilx-Portfolio/netflix" target="_blank" rel="noopener noreferrer" className={styles.netflixPortfolio}>
+                <a href="https://neha-pd.github.io/Netfilx-Portfolio/netflix" target="_blank" rel="noopener noreferrer" className={styles.netflixPortfolio}>
                   <i className="fas fa-external-link-alt"></i>
                   Netflix Portfolio
                 </a>
