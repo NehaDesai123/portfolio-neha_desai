@@ -18,8 +18,8 @@ jobs:
       - name: Build with Docker
         run: |
           docker build -t portfolio-neha_desai .
-          docker create --name temp portfolio-neha_desai
-          docker cp temp:/app/dist ./dist
+          docker create --name temp1 portfolio-neha_desai
+          docker cp temp1:/app/dist ./dist
           docker rm temp
 
       - name: Deploy to GitHub Pages
